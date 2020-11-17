@@ -82,7 +82,7 @@ class LIFO extends  Replacer {
    * or choosing a page to replace using LIFO policy
    *
    * @return 	return the frame number
-   *		return -1 if failed
+   * @exception  BufferPoolExceededException if the buffer has no more room
    */
 
  public int pick_victim()
