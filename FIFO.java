@@ -82,7 +82,7 @@ class FIFO extends  Replacer {
    * or choosing a page to replace using FIFO policy
    *
    * @return 	return the frame number
-   *		return -1 if failed
+   * @exception  BufferPoolExceededException if the buffer has no more room
    */
 
  public int pick_victim()
