@@ -46,3 +46,14 @@ else if(replacerArg.compareTo("FIFO")==0)
 In this way we made sure that the replacer was rightfully assigned when the BMTest2020 main use "FIFO" or "LIFO" or "LRUK" as arguments.
 
 
+We also modified the BufMgr.java class file as it was lacking a getReplacer() function in the BufMgr Class
+
+  /** Return the replacer attribute.
+   *
+   * @return the first page id of the new pages. 
+   */
+  public Replacer getReplacer() {
+	  
+	  return replacer;
+	  
+  }
